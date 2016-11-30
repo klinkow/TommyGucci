@@ -1,0 +1,12 @@
+<div id="image">
+<img src="http://37.media.tumblr.com/44d4fb34d7d9a0407c8fd5520e2c3123/tumblr_nago0vkGOD1tbhv9ro1_500.gif">
+</div>
+<h1><%= @name %></h1>
+<h3>Food: <%= @food %></h3>
+<h3>Sleep: <%= @sleep %></h3>
+<h3>Attention: <%= @attention %></h3>
+
+
+<form action="/check" method="post">
+  <button type="submit" class="btn btn-info">Check On "<%= @name %>"</button>
+</form>
